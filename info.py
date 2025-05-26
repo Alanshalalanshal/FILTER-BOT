@@ -113,8 +113,8 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Token Verification Info :
 VERIFY = bool(environ.get('VERIFY', True))
-VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'arlinks.in')
-VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '35bf30df800f56ab40299cbd938bbad3afd70f29')
+VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'shortxlinks.com')
+VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '794a271f91ab933a04f1c1a015dd64dff0ce23b8')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/NarutoSeriesUpdates/12')
 
 # If You Fill Second Shortner Then Bot Attach Both First And Second Shortner And Use It For Verify.
