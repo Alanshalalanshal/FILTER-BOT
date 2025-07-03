@@ -97,18 +97,3 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         logging.info('Service Stopped Bye 👋')
 
-@Client.on_message(filters.command("start"))
-async def start_handler(client, message):
-    args = message.command  # This splits the message: ['/start', 'search_thug_life']
-
-    if len(args) > 1:
-        payload = args[1]  # 'search_thug_life'
-
-        if payload.startswith("search_"):
-            keyword = payload.replace("search_", "")  # 'thug_life'
-            # Add logic here to look up the filter
-            await message.reply_text(f"Fetching filter for: {keyword}")
-        else:
-            await message.reply_text("Unknown payload.")
-    else:
-        await message.reply_text("Welcome! Type /filters to browse available options.")
