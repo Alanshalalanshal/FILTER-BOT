@@ -97,3 +97,11 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         logging.info('Service Stopped Bye 👋')
 
+@Client.on_message(filters.command("start"))
+async def start_handler(client, message):
+    args = message.command
+    if len(args) > 1:
+        payload = args[1]
+        if payload.startswith("search_"):
+            keyword = payload.replace("search_", "")
+            # Trigger your filter logic here
